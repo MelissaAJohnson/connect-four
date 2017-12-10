@@ -205,12 +205,11 @@
 
   function newGame() {
     Confirm.render("Are you sure you want to start a new game?")
-    if (confirmed) {
-      //clearBoard()
-      document.formo.redScoreBoard.value = redScore + ""
-      document.formo.blackScoreBoard.value = blackScore + ""
-    }
-    confirmed = false
+  }
+
+  function newGameStart() {
+    document.formo.redScoreBoard.value = redScore + ""
+    document.formo.blackScoreBoard.value = blackScore + ""
     rePlay()
     if (matchMade == 1) {
       gameActive = 1
@@ -227,6 +226,11 @@
         vals[c1] = 0
       }
     }
+  }
+
+  function setMsg(whatToSay) {
+    window.status = whatToSay
+    return true
   }
 
   function CustomAlert(){
@@ -272,9 +276,9 @@
   		document.getElementById('dialogoverlay').style.display = "none";
   	}
   	this.yes = function(){
-      var confirmed = true
   		document.getElementById('dialogbox').style.display = "none";
   		document.getElementById('dialogoverlay').style.display = "none";
+      newGameStart()
   	}
   }
 
