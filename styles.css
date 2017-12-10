@@ -1,0 +1,155 @@
+h1 {
+  font-size: 36px;
+}
+
+body {
+  background-color: white;
+  font-family: "Open Sans";
+}
+
+img {
+  border: 0;
+}
+
+a {
+  color: grey;
+  text-decoration: none
+}
+
+a:visited {
+  color: blue
+}
+
+font.score {
+  color: blue;
+  font-size: large
+}
+
+font.redscore {
+  color: red;
+  font-weight: bold
+}
+
+font.blackscore {
+  color: black;
+  font-weight: bold
+}
+
+input {
+  border: none;
+  font-size: 16px;
+  width: 50px
+}
+
+input[type="button"]{
+  width: 100px
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    width: 100%;
+    text-align: center;
+}
+
+#dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #000;
+	width: 100%;
+	z-index: 10;
+}
+
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #000;
+	border-radius:7px;
+	width:550px;
+	z-index: 10;
+}
+
+#dialogbox > div{
+  background:#FFF;
+  margin:1px;
+}
+
+#dialogbox > div > #dialogboxhead{
+  background: #3ca1cb;
+  font-size:19px;
+  padding:10px;
+  color: #FFF;
+}
+
+#dialogbox > div > #dialogboxbody{
+  background: #FFF;
+  padding:20px;
+  color:#000;
+}
+
+#dialogbox > div > #dialogboxfoot{
+  background: #3ca1cb;
+  padding:10px;
+  text-align:right;
+}
